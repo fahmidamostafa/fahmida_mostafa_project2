@@ -1,0 +1,8 @@
+*.psd
+images/image34.jpeg
+node_modules
+.DS_Store
+random_folder
+PSDs
+prepros-6.config
+scrap.html

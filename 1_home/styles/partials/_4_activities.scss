@@ -1,0 +1,68 @@
+.activities {
+    background: $iceBlue;
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .container {
+            width: 50%;
+            padding: 0.5rem;
+            .title {
+                display: flex;
+                flex-direction: row;
+                color: $black;
+                line-height: 2.9rem;
+                letter-spacing: 0.15rem;
+                position: relative;
+                &::before {
+                    content: "";
+                    border-radius: 50%;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    background: $greenishCyan;
+                    position: absolute;
+                    top: 0.5rem;
+                }
+                .fontAwesome {
+                    z-index: 1;
+                    color: $iceBlue;
+                    width: 2.5rem;
+                    height: 3.5rem;
+                    text-align: center;
+                    padding-top: 0.25rem;
+                    font-size: 1.25rem;
+                }
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    line-height: 2.9rem;
+                    letter-spacing: 0.15;
+                    margin-left: 1rem;
+                    color: $spruce;
+                }
+            }
+            p {
+                margin-left: 3.55rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .activities {
+        .wrapper {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            .container {
+                width: 100%;
+                padding: 0 2rem 2rem 2rem;
+                &:nth-child(4n) {
+                    padding-bottom: 0;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

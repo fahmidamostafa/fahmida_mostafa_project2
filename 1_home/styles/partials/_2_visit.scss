@@ -1,0 +1,57 @@
+.visit {
+    background: $iceBlue;
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        .container {
+            order: 2;
+            width: calc(100% / 3);
+            display: flex;
+            position: relative;
+            img {
+                display: block;
+                position: absolute;
+                right: 0;
+                box-shadow: -1rem 1rem $greenishCyan;
+            }
+        }
+        .description {
+            order: 1;
+            width: calc(((100% - 5rem) * 2) / 3);
+            margin-right: 5rem;
+            h3 {
+                color: $spruce;
+                letter-spacing: 0.2rem;
+                font-size: 1.75rem;
+            }
+            p {
+                line-height: 1.6rem;
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .visit {
+        .wrapper {
+            flex-direction: column;
+            .container {
+                order: 1;
+                width: 100%;
+                padding: 0 2rem;
+                justify-content: center;
+                img {
+                    position: relative;
+                    width: 100%;
+                }
+            }
+            .description {
+                order: 2;
+                width: 100%;
+                padding: 4rem 2rem 0 2rem;
+                text-align: center;
+            }
+        }
+    }
+}

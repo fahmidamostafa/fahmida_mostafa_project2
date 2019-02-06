@@ -1,0 +1,27 @@
+.free {
+    text-align: center;
+    background: $iceBlue;
+    .banner {
+        width: 100%;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .description {
+        max-width: 52rem;
+        margin: 0 auto;
+        padding: 10rem 0;
+        .loneHeading {
+            color: $spruce;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .free {
+        .description {
+            padding: 5rem 2rem;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+header {
+    min-height: 55vw;
+    background-color: $iceBlue;
+    background-image: url(../assets/home-image-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    nav {
+        .wrapper {
+            padding: 1rem 0;
+        }
+        .headerTop {
+            display: flex;
+            .logo {
+                flex: 3 auto;
+            }
+            #navCheck {
+                display: none;
+            }
+            .menu {
+                flex: 1 auto;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                list-style: none;
+                li {
+                    display: flex;
+                    flex: 1 auto;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 41%;
+        left: 36%;
+        h1 {
+            z-index: 1;
+            margin: 0;
+        }
+        .headingPart1 {
+            text-transform: lowercase;
+            color: $spruce;
+            line-height: 2.9rem;
+            letter-spacing: 0.3rem;
+            font-size: 3vw; 
+        }
+        .headingPart2 {
+            display: block;
+            margin-left: -1rem;
+            text-transform: uppercase;
+            color: $twilightBlue;
+            font-size: 7vw;
+            font-family: 'Playfair Display SC', serif;
+            line-height: 0.8;
+        }
+    }
+    img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 43%;
+    }
+}
+
+@media (max-width: 750px) {
+    .navButton {
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+    }
+
+    .navButton {
+        label {
+            span {
+                width: 2rem;
+                height: 0.75rem;
+                border-top: 2px solid $iceBlue;
+                display: block;
+                cursor: pointer;
+            }
+        }
+    }
+
+    header {
+        nav {
+            .menu {
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                width: 7.5rem;
+                background-color: rgba(1, 50, 32, 0.3);
+                transition: all 0.3s ease-in;
+                overflow-y: hidden;
+                top: 3rem;
+                right: 1rem;
+                li {
+                    a {
+                        padding: 0.5rem;
+                        width: 100%;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    
+    #navCheck:not(:checked) + .menu {
+        height: 0px;
+    }
+
+    #navCheck:checked + .menu {
+        height: 10.5rem;
+    }
+}

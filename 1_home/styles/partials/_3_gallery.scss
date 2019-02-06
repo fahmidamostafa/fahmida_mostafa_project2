@@ -1,0 +1,42 @@
+.gallery {
+    background: $lightLightBlue;
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        .container {
+            width: calc((100% - 4rem) / 3);
+            margin: 0 1rem;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        .container:nth-child(3n + 1) {
+            margin-left: 0;
+        }
+        .container::nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .gallery {
+        .wrapper {
+            flex-direction: column;
+            .container {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 0;
+                padding: 0 2rem 2rem 2rem;
+                &:nth-child(3n) {
+                    padding-bottom: 0;
+                }
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

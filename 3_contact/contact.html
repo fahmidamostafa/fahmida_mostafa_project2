@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display+SC:900i" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Beachstays | Contact</title>
+</head>
+<body>
+
+    <!-- THIS IS THE BEGINNING OF THE HEADER -->
+    <header>
+        <nav>
+            <div class="wrapper headerTop">
+                <div class="logo">
+                    <h3>Beachstays</h3>
+                </div>
+    
+                <div class="navButton">
+                    <label for="navCheck">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+    
+                <input type="checkbox" id="navCheck">
+    
+                <ul class="menu">
+                    <li><a href="../1_home/home.html" class="navLink">Home</a></li>
+                    <li><a href="#" class="navLink">About</a></li>
+                    <li><a href="../2_blog/blog.html" class="navLink">Blog</a></li>
+                    <li><a href="contact.html" class="navLink">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <h1>Get in Touch</h1>
+        </div>
+
+    </header>
+
+    <!-- THIS IS THE BEGINNING OF THE MAIN -->
+    <main class="wrapper">
+
+        <!-- THIS IS THE BEGINNING OF THE FORM SECTION -->
+        <section class="form">
+            <form action="submit" method="POST" class="msgForm" name="msgForm">
+                <input type="text" name="name" id="name" class="name" placeholder="Name" required="true">
+                <input type="email" name="email" id="email" class="name" placeholder="Email address" required="true">
+                <textarea name="msg" id="msg" cols="30" rows="6" placeholder="Message"></textarea>
+                <input type="submit" class="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- THIS IS THE BEGINNING OF THE SOCIAL LINKS SECTION -->
+        <section class="socialLinks">
+            <div class="wrapper">
+                <ul class="socialMedia">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#">info@email.com</a></li>
+                </ul>
+                <ul class="address">
+                    <li>123 - 456 - 7890</li>
+                    <li>123 Queen Street West, Unit 10</li>
+                    <li>Toronto, Ontario</li>
+                    <li>M5V2D5</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- THIS IS THE BEGINNING OF THE FOOTER -->
+    <footer>
+        <p>Copyright © 2019 HackerYou</p>
+    </footer>
+</body>
+</html>
